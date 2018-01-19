@@ -18,13 +18,13 @@ $( document ).ready(function() {
 
   /******** HomePage Recipe ******/
 
-  $('.home .home-page-2 h1').addClass('wp-animation').addClass('wp-fadeInUp');
-  $('.home .home-page-4 h1').addClass('wp-animation').addClass('wp-fadeInUp');
+  $('.home .home-page-2 h3').addClass('wp-animation').addClass('wp-fadeInUp');
+  $('.home .home-page-4 h3').addClass('wp-animation').addClass('wp-fadeInUp');
 
   $('.home .video-slider').addClass('wp-animation').addClass('wp-fadeIn');
 
-  $('.footer-widgets-1 h1').addClass('wp-animation').addClass('wp-fadeInUp');
-  $('.footer-widgets-1 #text-34 p').addClass('wp-animation').addClass('wp-tada');
+  $('.footer-widgets-1 h4').addClass('wp-animation').addClass('wp-fadeIn');
+  $('.footer-widgets-1 #text-36 p').addClass('wp-animation').addClass('wp-tada');
 
   /******** Product Slider Recipe ******/
 
