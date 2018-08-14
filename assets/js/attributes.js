@@ -5,7 +5,7 @@ $=jQuery;
 $( document ).ready(function() {
 
   // All of the animation classes from animate.css
-  var animations = [
+  let animations = [
     "bounce",
     "flash",
     "pulse",
@@ -103,7 +103,7 @@ $( document ).ready(function() {
   });
   
   // Search for delay classes
-  for (var x = 1; x <= 5; x++) {
+  for (let x = 1; x <= 5; x++) {
     if ( $('.wp-animation').hasClass('wp-delay-' + x) || $('.animated').hasClass('wp-delay-' + x) ) {
       $('.wp-delay-' + x).attr('data-wp-animation-delay', x + 's');
     }
