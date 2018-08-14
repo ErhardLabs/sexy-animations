@@ -4,6 +4,10 @@ Developer-friendly WordPress Plugin for creating animations
 Using these libraries Waypoints.js + Animate.css
 
   -Dynamically add Waypoint animation point-
+  
+  clone the repo
+  cd into sexy-animations
+  run npm install
 
    How to use:
 
