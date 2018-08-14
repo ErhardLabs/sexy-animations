@@ -22,7 +22,7 @@ $( document ).ready(function() {
 
   function onScrollInit( items, trigger ) {
     items.each( function() {
-      var wpElement = $(this),
+      let wpElement = $(this),
         wpAnimationClass = wpElement.attr('data-wp-animation');
         wpAnimationDelay = wpElement.attr('data-wp-animation-delay');
 
