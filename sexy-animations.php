@@ -27,14 +27,9 @@ add_action('wp_enqueue_scripts', 'sexy_animations_styles_scripts');
 function sexy_animations_styles_scripts() {
 
   // src JS
-  wp_enqueue_script( 'sexy-animation', SEXY_ANIMATIONS_URL . '/dist/js/app.js', array('jquery'), '', true );
-//  wp_enqueue_script( 'waypoints', SEXY_ANIMATIONS_URL . '/dist/js/jquery.waypoints.min.js', array('jquery'), '', true );
+  wp_enqueue_script( 'sexy-animation-js', SEXY_ANIMATIONS_URL . '/dist/js/app.js', array('jquery'), '', true );
 
   // CSS Libraries
-  wp_enqueue_style( 'animate-lib', SEXY_ANIMATIONS_URL . '/dist/styles/animate.min.css' );
-  //wp_enqueue_style( 'animate-lib', SEXY_ANIMATIONS_URL . '/includes/css/materialize.min.css' );
-
-  // src CSS
-  wp_enqueue_style( 'sexy-animations', SEXY_ANIMATIONS_URL . '/assets/css/sexy-animations.css' );
+  wp_enqueue_style( 'sexy-animation-css', SEXY_ANIMATIONS_URL . '/dist/styles/style.css' );
 
 }

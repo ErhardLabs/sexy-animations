@@ -9,13 +9,15 @@ const devPath  = 'assets';
 mix.setPublicPath( 'dist' );
 
 /*
- * Copy node modules we want in our project
+ * Set Laravel Mix options.
  *
- * @link https://laravel.com/docs/5.6/mix#copying-files-and-directories
+ * @link https://laravel.com/docs/5.6/mix#postcss
+ * @link https://laravel.com/docs/5.6/mix#url-processing
  */
-
-mix.copy('node_modules/animate.css/animate.min.css', 'dist/styles/animate.min.css');
-mix.copy('node_modules/waypoints/lib/jquery.waypoints.min.js', 'dist/js/jquery.waypoints.min.js');
+mix.options( {
+  postCss        : [ require( 'postcss-preset-env' )() ],
+  processCssUrls : false
+} );
 
 
 /*
@@ -35,7 +37,6 @@ mix.sourceMaps();
  */
 mix.version();
 
-
 /*
  * Compile JavaScript.
  *
@@ -43,3 +44,21 @@ mix.version();
  */
 
 mix.js(`${devPath}/js/app.js`, 'js');
+
+/*
+ * Compile CSS. Mix supports Sass, Less, Stylus, and plain CSS, and has functions
+ * for each of them.
+ *
+ * @link https://laravel.com/docs/5.6/mix#working-with-stylesheets
+ * @link https://laravel.com/docs/5.6/mix#sass
+ * @link https://github.com/sass/node-sass#options
+ */
+
+// Sass configuration.
+let sassConfig = {
+  outputStyle : 'expanded',
+  indentType  : 'tab',
+  indentWidth : 1
+};
+
+mix.sass( `${devPath}/sass/style.scss`, 'styles', sassConfig );
