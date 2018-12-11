@@ -56,9 +56,16 @@ $( document ).ready(function() {
   $('.single-product .woocommerce-product-details__short-description').addClass('wp-animation').addClass('wp-fadeIn').addClass('wp-delay-1');
   $('.single-product .ssp_video').addClass('wp-animation').addClass('wp-fadeIn').addClass('wp-delay-1');
   $('.single-product .lyrics_title').addClass('wp-animation').addClass('wp-fadeIn');
-  $('.single-product .lyrics').addClass('wp-animation').addClass('wp-fadeIn');
+  //$('.single-product .lyrics').addClass('wp-animation').addClass('wp-fadeIn');
   $('.single-product .upsells .products .product').addClass('wp-animation').addClass('wp-fadeInUp');
   $('.single-product .upsells h2').addClass('wp-animation').addClass('wp-fadeIn');
+
+
+  /******** New Music Release Marketing Page ******/
+  // $('.sexy_song_link_container h2').addClass('wp-animation').addClass('wp-fadeIn').addClass('wp-delay-1');
+  // $('.sexy_song_link_container h4').addClass('wp-animation').addClass('wp-fadeIn').addClass('wp-delay-1');
+  // $('.sexy_song_link').addClass('wp-animation').addClass('wp-fadeIn').addClass('wp-delay-2');
+  // $('.song_link_share').addClass('wp-animation').addClass('wp-fadeIn').addClass('wp-delay-3');
 
 
 });
